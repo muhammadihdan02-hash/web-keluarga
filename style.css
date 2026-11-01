@@ -1,6 +1,6 @@
 /* ============================================
    KELUARGA HARAPAN — FAMILY CV WEBSITE
-   Theme: Black & Gold (Premium/Luxury)
+   Theme: White & Gold
    ============================================ */
 
 /* ---- CSS Variables ---- */
@@ -894,7 +894,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
 }
 
@@ -907,7 +907,6 @@ body {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
 }
 
 /* Values List */

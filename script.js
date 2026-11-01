@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.speedY = (Math.random() - 0.5) * 0.5;
             this.opacity = Math.random() * 0.5 + 0.1;
             this.opacitySpeed = (Math.random() - 0.5) * 0.005;
-            this.accent = Math.random() > 0.5;
+            this.gold = Math.random() > 0.5;
         }
         
         update() {
@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            if (this.accent) {
-                ctx.fillStyle = `rgba(37, 107, 115, ${this.opacity})`;
+            if (this.gold) {
+                ctx.fillStyle = `rgba(212, 175, 55, ${this.opacity})`;
             } else {
-                ctx.fillStyle = `rgba(74, 156, 166, ${this.opacity * 0.5})`;
+                ctx.fillStyle = `rgba(240, 214, 138, ${this.opacity * 0.5})`;
             }
             ctx.fill();
         }
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeMotto, 1500);
     }
 
-    // ---- Accent Sparkle on Click ----
+    // ---- Gold Sparkle on Click ----
     document.addEventListener('click', (e) => {
         createSparkle(e.clientX, e.clientY);
     });
@@ -301,13 +301,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 position: fixed;
                 width: 4px;
                 height: 4px;
-                background: #256B73;
+                background: #D4AF37;
                 border-radius: 50%;
                 pointer-events: none;
                 z-index: 9999;
                 left: ${x}px;
                 top: ${y}px;
-                box-shadow: 0 0 6px #256B73;
+                box-shadow: 0 0 6px #D4AF37;
             `;
             document.body.appendChild(sparkle);
             
@@ -329,6 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    console.log('%c✨ Keluarga - Family CV ✨', 'color: #256B73; font-size: 20px; font-weight: bold; font-family: serif;');
-    console.log('%cDibuat dengan ❤️', 'color: #3D858C; font-size: 12px;');
+    console.log('%c✨ Keluarga - Family CV ✨', 'color: #D4AF37; font-size: 20px; font-weight: bold; font-family: serif;');
+    console.log('%cDibuat dengan ❤️', 'color: #B8960C; font-size: 12px;');
 });
