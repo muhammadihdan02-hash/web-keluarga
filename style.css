@@ -5,16 +5,16 @@
 
 /* ---- CSS Variables ---- */
 :root {
-    --black: #0a0a0a;
-    --black-light: #1a1a1a;
-    --black-lighter: #2a2a2a;
+    --black: #ffffff;
+    --black-light: #f5f5f5;
+    --black-lighter: #ececec;
     --gold: #D4AF37;
-    --gold-light: #F0D68A;
-    --gold-dark: #B8960C;
-    --gold-glow: rgba(212, 175, 55, 0.3);
-    --white: #f5f5f5;
-    --white-dim: #cccccc;
-    --gray: #888888;
+    --gold-light: #B88B00;
+    --gold-dark: #9B7607;
+    --gold-glow: rgba(212, 175, 55, 0.2);
+    --white: #111111;
+    --white-dim: #333333;
+    --gray: #666666;
     --font-display: 'Playfair Display', serif;
     --font-body: 'Poppins', sans-serif;
     --font-script: 'Poppins', sans-serif;
@@ -96,10 +96,10 @@ body {
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     padding: 10px 40px;
-    box-shadow: 0 2px 30px rgba(212, 175, 55, 0.1);
+    box-shadow: 0 2px 30px rgba(212, 175, 55, 0.12);
 }
 
 .nav-logo {
@@ -201,7 +201,7 @@ body {
     right: -100%;
     width: 70%;
     height: 100vh;
-    background: rgba(10, 10, 10, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
     display: flex;
     flex-direction: column;
@@ -780,8 +780,8 @@ body {
 }
 
 .keunikan-card {
-    background: linear-gradient(145deg, rgba(42,42,42,0.8), rgba(26,26,26,0.9));
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(245,245,245,0.95));
+    border: 1px solid rgba(212, 175, 55, 0.25);
     border-radius: 16px;
     padding: 30px;
     text-align: center;
